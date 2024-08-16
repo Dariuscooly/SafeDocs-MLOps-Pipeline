@@ -14,7 +14,7 @@ SafeDocs: Technical Architecture V2 is a project designed to develop an end-to-e
 - **Amazon SageMaker**: Manages the MLOps pipeline, including training, deploying, and monitoring machine learning models.
 
 ## Repository Structure
-
+digraph G {
 SafeDocs-MLOps-Pipeline/
 ├── src/
 │ ├── pipeline.py # Defines the SageMaker pipeline workflow
@@ -31,3 +31,4 @@ SafeDocs-MLOps-Pipeline/
 ├── .gitignore # Specifies files and directories to be ignored by Git
 ├── README.md # Project overview and setup instructions (this file)
 └── requirements.txt # Lists project dependencies
+}
