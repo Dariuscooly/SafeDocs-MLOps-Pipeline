@@ -11,3 +11,21 @@ SafeDocs: Technical Architecture V2 is a project designed to develop an end-to-e
 - **Amazon RDS**: Relational database for storing processed data.
 - **AWS API Gateway**: To expose the application through a RESTful API.
 - **GitHub Actions**: For continuous integration and deployment of the MLOps pipeline.
+- **Amazon SageMaker**: Manages the MLOps pipeline, including training, deploying, and monitoring machine learning models.
+
+SafeDocs-MLOps-Pipeline/
+├── src/
+│   ├── pipeline.py         # Defines the SageMaker pipeline workflow
+│   ├── train.py            # Contains model training logic
+│   └── process_data.py     # (Optional) Data preprocessing and analysis script
+├── tests/
+│   └── test_pipeline.py    # Unit tests for the pipeline components
+├── docs/
+│   ├── architecture.md     # Technical documentation of the project
+│   └── setup_instructions.md # Detailed setup and deployment instructions
+├── .github/
+│   └── workflows/
+│       └── deploy.yml      # GitHub Actions workflow for CI/CD
+├── .gitignore              # Specifies files and directories to be ignored by Git
+├── README.md               # Project overview and setup instructions (this file)
+└── requirements.txt        # Lists project dependencies
